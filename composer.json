@@ -8,8 +8,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3",
-        "setono/tag-bag-bundle": "^2.0",
+        "php": "^7.3 || ^8.0",
+        "setono/tag-bag-bundle": "dev-fix/composer",
         "sylius/sylius": "^1.4"
     },
     "require-dev": {
@@ -78,5 +78,11 @@
             "@fixtures",
             "@run"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/TagBagBundle"
+        }
+    ]
 }
